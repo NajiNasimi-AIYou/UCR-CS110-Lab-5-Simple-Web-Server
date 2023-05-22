@@ -60,7 +60,7 @@ async function setEditModal(isbn) {
         document.getElementById('numOfPages').value = numOfPages
 
         // setting up the action url for the book
-        document.getElementById('editform').action = `http://localhost:3000/book/${isbn}`
+        document.getElementById('editForm').action = `http://localhost:3000/book/${isbn}`
     }
 }
 

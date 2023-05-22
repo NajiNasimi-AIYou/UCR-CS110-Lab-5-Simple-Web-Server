@@ -1,33 +1,67 @@
-<div class="container">
-    <hr>
-    <h1>Create New Book</h1> 
-    <hr>
-    
-    <form action="http://localhost:3000/book" method="POST">
-        <div class="form-group">
-            <label for="ISBN">ISBN</label> 
-            <input class="form-control" name="isbn">
-        </div>  
-        <div class="form-group">
-            <label for="Title">Title</label>
-            <input class="form-control" name="title">
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Metadata -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+    <!-- NavBar -->
+    <!-- Navbar created by AWS Code Whisperer -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Book Inventory Management</a>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="book-list.html">Book List</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="new-book.html">Create New Book</a>
+                </li>
+            </ul>
         </div>
-        <div class="form-group">
-            <label for="Author">Author</label>
-            <input class="form-control" name="author">
-        </div>
-        <div class="form-group">
-            <label for="PublishedDate">Published Date</label>
-            <input class="form-control" name="publishedDate" type="date">
-        </div>
-        <div class="form-group">
-            <label for="Publisher">Publisher</label>
-            <input class="form-control" name="publisher">
-        </div>
-        <div class="form-group">
-            <label for="NumberOfPages">Number of Pages</label>
-            <input class="form-control" name="numberOfPages" type="number">
-        </div>
-        <button type="submit" class="btn btn-primary">Submit</button>
-    </form>
-</div>
+    </nav>
+</head>
+
+<body>
+    <div class="container">
+        <hr>
+        <h1>Create New Book</h1> 
+        <hr>
+        
+        <form action="http://localhost:3000/book" method="POST">
+            <div class="form-group">
+                <label for="ISBN">ISBN</label> 
+                <input class="form-control" name="isbn">
+            </div>  
+            <div class="form-group">
+                <label for="Title">Title</label>
+                <input class="form-control" name="title">
+            </div>
+            <div class="form-group">
+                <label for="Author">Author</label>
+                <input class="form-control" name="author">
+            </div>
+            <div class="form-group">
+                <label for="PublishedDate">Published Date</label>
+                <input class="form-control" name="publishedDate" type="date">
+            </div>
+            <div class="form-group">
+                <label for="Publisher">Publisher</label>
+                <input class="form-control" name="publisher">
+            </div>
+            <div class="form-group">
+                <label for="NumberOfPages">Number of Pages</label>
+                <input class="form-control" name="numOfPages" type="number">
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </div>
+</body>
+
+</html>
