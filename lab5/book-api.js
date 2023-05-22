@@ -51,4 +51,4 @@ app.delete('/book/:isbn', (req, res) => {
 })
 
 
-app.listen(port, () => console.log('Hello World app listening on posrt' + port))
+app.listen(port, () => console.log('Hello World app listening on port: ' + port))

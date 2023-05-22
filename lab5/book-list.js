@@ -79,5 +79,3 @@ async function deleteBook(isbn) {
 }
 
 loadBooks()
-setEditModal()
-deleteBook()

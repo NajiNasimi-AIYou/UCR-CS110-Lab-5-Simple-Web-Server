@@ -34,22 +34,37 @@
         // When 'New Book' tab is clicked, load new book form
         document.getElementById('new-tab').addEventListener('click', function() {
             document.getElementById('content').innerHTML = `
-                <!-- Your new-book.html content goes here -->
+                <!-- new-book.html content goes here -->
                 <div class="container">
-                    <form id="new-book-form" action="http://localhost:3000/book" method="post">
+                    <hr>
+                    <h1>Create New Book</h1> 
+                    <hr>
+                    
+                    <form action="http://localhost:3000/book" method="POST">
                         <div class="form-group">
-                            <label for="isbn">ISBN</label>
-                            <input type="text" class="form-control" id="isbn" name="isbn" placeholder="Enter ISBN">
+                            <label for="ISBN">ISBN</label> 
+                            <input class="form-control" name="isbn">
+                        </div>  
+                        <div class="form-group">
+                            <label for="Title">Title</label>
+                            <input class="form-control" name="title">
                         </div>
                         <div class="form-group">
-                            <label for="title">Title</label>
-                            <input type="text" class="form-control" id="title" name="title" placeholder="Enter title">
+                            <label for="Author">Author</label>
+                            <input class="form-control" name="author">
                         </div>
                         <div class="form-group">
-                            <label for="author">Author</label>
-                            <input type="text" class="form-control" id="author" name="author" placeholder="Enter author's name">
+                            <label for="PublishedDate">Published Date</label>
+                            <input class="form-control" name="publishedDate" type="date">
                         </div>
-                        <!-- Other input fields would follow the same structure -->
+                        <div class="form-group">
+                            <label for="Publisher">Publisher</label>
+                            <input class="form-control" name="publisher">
+                        </div>
+                        <div class="form-group">
+                            <label for="NumberOfPages">Number of Pages</label>
+                            <input class="form-control" name="numberOfPages" type="number">
+                        </div>
                         <button type="submit" class="btn btn-primary">Submit</button>
                     </form>
                 </div>
